@@ -1,0 +1,80 @@
+.slider-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 45vh; /* Fixed height for the container */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Hide overflow to keep the layout clean */
+
+  h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .slider-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Make sure content takes full height of the container */
+    
+    .slider-button {
+      background: none;
+      border: none;
+      font-size: 2em;
+      cursor: pointer;
+      color: #007bff; /* Arrow color */
+    }
+
+    .product {
+      flex-grow: 1;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px; /* Add some padding for spacing */
+      max-width: 100%; /* Ensure product content does not overflow */
+      align-items: start;
+      justify-content: center; /* Ensure content does not overflow */
+
+      img {
+        align-self: center;
+        width: 100%;
+        max-width: 250px; /* Limit image width */
+        
+        max-height: 150px;
+        object-fit:scale-down; /* Maintain aspect ratio */
+        border-radius: 10px;
+      }
+
+      h3 {
+        margin: 0px 0;
+        font-size: 1.5em; /* Adjust title font size */
+      }
+
+      p {
+        margin: 0px 0;
+        font-size: 1em; 
+        font-weight: 300;
+        font-style: italic;/* Adjust description font size */
+      }
+
+      .rating {
+        color: gold;
+        font-size: 1.2em; /* Adjust rating font size */
+        margin: 0 0;
+      }
+
+      .order-button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em; /* Adjust button font size */
+      }
+    }
+  }
+}

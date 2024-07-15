@@ -1,0 +1,47 @@
+.button-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 20px 0;
+
+  .bar-button {
+    padding: 10px;
+    background: linear-gradient(to right, #63c2d7, #2d4080);
+    border: none; /* Remove the border */
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff3f3; /* Text color */
+    display: flex;
+    align-items: center;
+    
+    
+    
+    justify-content: center;
+     /* Space between icon and text */
+
+    
+
+    &:hover {
+      background: #000000;
+      color: #e0e2e4;
+    }
+
+    svg {
+      color: #ffffff; /* Icon color */
+    }
+
+    &:hover svg {
+      color: #e0e2e4; /* Icon color on hover */
+    }
+    .icon{
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+    p{
+      margin-right: 30px;
+    }
+  }
+}
